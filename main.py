@@ -10,17 +10,17 @@ def classify_rgb(red: int, green: int, blue: int):
         if red <= 35:
             return "black"
         else:
-            return classify_red(red)+" red"
+            return classify_red(red)+"Red"
     elif red == 0 and green != 0 and blue == 0:
         if green <= 10:
             return "black"
         else:
-            return classify_green(green)+" green"
+            return classify_green(green)+"Green"
     elif red == 0 and green == 0 and blue != 0:
         if blue <= 20:
             return "black"
         else:
-            return classify_blue(blue)+" blue"
+            return classify_blue(blue)+"Blue"
     else:
         return deeper_classification(red, green, blue)
 
